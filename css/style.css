@@ -7,6 +7,7 @@
     --team-back-color:#F5F4FA;
     --button-color-hover:#188CE8;
     --border-color:#EEEEEE;
+    --icon-color:#AFB1B8;
 }
 /* body main */
 
@@ -244,60 +245,169 @@ margin-right: 30px;
 .team-write {
     padding: 30px 0;
 }
+.link-container {
+    margin: 16px 32px 30px 32px;
+}
 .social-link {
+    fill: var(--icon-color);
     width: 44px;
     height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .social-link:hover {
+    background-color: var(--effect-color);
     border-radius: 50%;
-    background-color: var(--button-color-hover);
     fill: var(--white-color);
 }
+.team-social {
+    display: flex;
+    margin-right: -10px;
+}
+.team-social-item {
+    flex-basis: calc(100% / 4 - 10px);
+    margin-right: 10px;
+}
+.headlines-partner {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.partners-link {
+fill: var(--icon-color);
+width: 170px;
+height: 92px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.partners-list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.partners-item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-right: 30px;
+}
+.partners-link:focus,
+.partners-link:hover {
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--effect-color);
+}
+
  
 /* footer */
 
-.container-footer {
-    background-color: var(--second-back-color);
+.footer-list {
+    display: flex;
+    align-items: baseline;
 }
+
+.footer-soc-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-icon-soc {
+    display: flex;
+    margin-right: 10px;
+}
+
+.footer-icon-soc:last-child {
+    margin-right: 0px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.footer .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer .footer-link:hover,
+.footer .footer-link:focus {
+   background-color: var(--effect-color);
+}
+
+.footer-list p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .address {
-    padding: 60px 0;
+    font-style: normal;
 }
-.logo-white {
+
+.footer {
+    background-color:var(--second-back-color);
+    min-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    display: inline-block;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer .title-white {
     color: var(--white-color);
 }
-.logo-footer {
-    color: var(--effect-color);
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-}
-.address-item {
-    font-style: normal;
-    font-weight: normal;
-    color: var(--white-color);
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-}
-.address-links {
+
+.footer .title-rgba {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    }
-.address-links-mail {
-        padding-top: 9px;
-        padding-bottom: 9px;
-    }
 
-    /* portfolio.html */
+}
 
-    /* filters*/
+.address .item {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.address .item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer .item-address {
+    margin-right: 70px;
+}
+
+.footer .item-address :hover,
+.footer .item-address :focus {
+    color: var(--effect-color);
+}
+
+
 
 .portfolio-container {
     background-color: var(--white-color);
