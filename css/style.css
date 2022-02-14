@@ -118,7 +118,6 @@ body {
 /* hero */
 
 .hero {
-    width: 1600px;
     height: auto;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back.jpg);
@@ -246,10 +245,10 @@ margin-right: 30px;
     letter-spacing: 0.03em;
 }
 .team-write {
-    padding: 30px 0;
+    padding: 30px 0 16px 0;
 }
 .link-container {
-    margin: 16px 32px 30px 32px;
+    margin: 0px 32px 30px 32px;
 }
 .social-link {
     fill: var(--icon-color);
@@ -321,7 +320,7 @@ border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -409,6 +408,7 @@ border-radius: 4px;
 .footer .item-address :focus {
     color: var(--effect-color);
 }
+
 
 
 
