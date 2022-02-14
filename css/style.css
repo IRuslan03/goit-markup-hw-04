@@ -90,10 +90,13 @@ body {
 }
 .contacts-link {
     color: var(--secondary-color);
-}
+     display: flex;
+     align-items: center;
+    }
 .contacts-icon {
     margin-right: 10px;
 }
+
 
 
 
