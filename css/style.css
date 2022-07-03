@@ -99,11 +99,8 @@ body {
     }
 .contacts-icon {
     margin-right: 10px;
-    fill: rgba(117, 117, 117, 1);
+    fill: currentColor;
 }
-
-
-
 
 /* hover and focus */
 
@@ -112,12 +109,11 @@ body {
 .address-links:focus,
 .address-links:hover,
 .nav-link:hover,
-.contacts-link:hover,
-.contacts-link:hover,
-.nav-link:focus,
-.contacts-link:focus {
+.nav-link:focus {
     color: var(--effect-color);
-    fill: var(--effect-color);
+}
+.contacts-link:hover {
+    color: var(--effect-color);
 }
 
 /* hero */
